@@ -1,15 +1,11 @@
 package com.example.demo;
 
-import com.example.demo.lib.HelloReply;
-import com.example.demo.lib.HelloRequest;
-import com.example.demo.lib.HelloServiceGrpc.HelloServiceImplBase;
-
 import io.github.majusko.grpc.jwt.annotation.Allow;
 import io.grpc.stub.StreamObserver;
-import net.devh.boot.grpc.server.service.GrpcService;
+import org.lognet.springboot.grpc.GRpcService;
 
-@GrpcService
-public class HelloServiceImpl extends HelloServiceImplBase {
+@GRpcService
+public class HelloServiceImpl extends HelloServiceGrpc.HelloServiceImplBase {
 
 	@Override
 	@Allow(roles= {"admin"})
@@ -18,5 +14,4 @@ public class HelloServiceImpl extends HelloServiceImplBase {
 		responseObserver.onNext(reply);
 		responseObserver.onCompleted();
 	}
-	
 }
