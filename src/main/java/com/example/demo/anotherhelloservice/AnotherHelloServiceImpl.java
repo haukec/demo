@@ -7,8 +7,6 @@ import com.example.demo.anotherhelloservice.Anotherhelloservice.AnotherHelloRepl
 import com.example.demo.anotherhelloservice.Anotherhelloservice.AnotherHelloRequest;
 
 import io.github.majusko.grpc.jwt.annotation.Allow;
-import io.github.majusko.grpc.jwt.data.GrpcJwtContext;
-import io.github.majusko.grpc.jwt.data.JwtContextData;
 import io.grpc.stub.StreamObserver;
 
 @GRpcService

@@ -35,24 +35,11 @@
 			<artifactId>grpc-jwt-spring-boot-starter</artifactId>
 			<version>1.0.9</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
-		</dependency>
-
-		<dependency>
-			<groupId>io.grpc</groupId>
-			<artifactId>grpc-stub</artifactId>
-			<version>${grpc.version}</version>
-		</dependency>
-
-		<dependency>
-			
-			<groupId>jakarta.annotation</groupId>
-			<artifactId>jakarta.annotation-api</artifactId>
-			<optional>true</optional>
 		</dependency>
 	</dependencies>
 
