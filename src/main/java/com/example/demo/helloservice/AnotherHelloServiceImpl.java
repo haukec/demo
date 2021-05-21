@@ -1,10 +1,8 @@
-package com.example.demo.anotherhelloservice;
+package com.example.demo.helloservice;
 
 import org.lognet.springboot.grpc.GRpcService;
 
-import com.example.demo.anotherhelloservice.AnotherHelloServiceGrpc.AnotherHelloServiceImplBase;
-import com.example.demo.anotherhelloservice.Anotherhelloservice.AnotherHelloReply;
-import com.example.demo.anotherhelloservice.Anotherhelloservice.AnotherHelloRequest;
+import com.example.demo.helloservice.AnotherHelloServiceGrpc.AnotherHelloServiceImplBase;
 
 import io.github.majusko.grpc.jwt.annotation.Allow;
 import io.grpc.stub.StreamObserver;

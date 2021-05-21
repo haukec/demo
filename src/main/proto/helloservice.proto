@@ -20,3 +20,20 @@ message HelloRequest {
 message HelloReply {
     string message = 1;
 }
+
+// The request message containing the user's name.
+message AnotherHelloRequest {
+    string name = 1;
+}
+
+// The response message containing the greetings
+message AnotherHelloReply {
+    string message = 1;
+}
+
+// Another greeting service definition.
+service AnotherHelloService {
+    // Sends a greeting
+    rpc SayHello (AnotherHelloRequest) returns (AnotherHelloReply) {
+    }
+}
