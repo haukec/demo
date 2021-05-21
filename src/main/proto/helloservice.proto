@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-package com.example.demo;
+package com.example.demo.helloservice;
 
 option java_multiple_files = true;
-option java_package = "com.example.demo.lib";
+// option java_package = "com.example.demo.lib";
 option java_outer_classname = "HelloWorldProto";
 
 // The greeting service definition.
