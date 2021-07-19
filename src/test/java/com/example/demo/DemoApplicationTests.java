@@ -6,12 +6,11 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-//import com.example.demo.HelloServiceGrpc.HelloServiceBlockingStub;
+import com.example.demo.grpc.jwt.data.GrpcHeader;
+import com.example.demo.grpc.jwt.interceptor.AuthClientInterceptor;
+import com.example.demo.grpc.jwt.service.JwtService;
+import com.example.demo.grpc.jwt.service.dto.JwtData;
 
-import io.github.majusko.grpc.jwt.data.GrpcHeader;
-import io.github.majusko.grpc.jwt.interceptor.AuthClientInterceptor;
-import io.github.majusko.grpc.jwt.service.JwtService;
-import io.github.majusko.grpc.jwt.service.dto.JwtData;
 import io.grpc.Channel;
 import io.grpc.ClientInterceptors;
 import io.grpc.ManagedChannel;
